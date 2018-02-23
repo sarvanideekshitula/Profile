@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+      background-image: url('http://www.gsfdcy.com/data/img/10/1218900-black-and-white-wallpaper.png');
+      background-position: center top;
+      background-size: 100% auto;
+}
+
+
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 1s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    text-align: center;
+    font-family: curl MT;
+    font-style: italic;
+    font-size: 28px;
+    color: black;
+}
+img {
+    width: 500px; /* you can use % */
+    height: auto;
+}
+p {
+  font-family: curl MT;
+  font-size: 28px;
+  text-align: center;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+<p>What you want to know about me..! Choose from below tabs..<p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'General')">General Info</button>
+  <button class="tablinks" onclick="openCity(event, 'Profile')">Profile</button>
+  <button class="tablinks" onclick="openCity(event, 'college')">My college</button>
+  <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
+  <button class="tablinks" onclick="openCity(event, 'contact')">Contact Info</button>
+</div>
+
+<div id="General" class="tabcontent">
+<h1>MYSELF!!</h1>
+<p>I like surfing places and enjoying scenic beauty there and tasting their local food...</p>
+<p>I don't want to like a mechanical life like simply doing things because it is asked to do so...</p>
+<p>I love shopping especially with my mom..</p>
+<p>I love to spend time with my family and friends</p>
+<p>I love to eat Panipuri</p>
+<p>I love to tease my friends and get teased from my friends <strong>:p</strong></p>
+</div>
+
+<div id="contact" class="tabcontent">
+  <p><strong>Email:</strong> <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></p>
+  <p><strong>Github:</strong><a href="https://github.com/sarvanideekshitula/">GitHub</a>/</p>
+  <p><strong>LinkedIn Id:</strong><a href="https://www.linkedin.com/mynetwork/">LinkedIn</a></p>
+  <p><strong>Blog:</strong><a href="https://sarvanideekshitula.wordpress.com/">Blog</a></p>
+  <p><strong>Phone:</strong> 7025847096</p>
+  <p>Can visit any of these to discuss technical stuff :)</p>
+  <h3>I don't know how to end this...</h3>
+  <h3>I can just say..Life is one time offer use it well!!</h3>
+</div>
+
+<div id="college" class="tabcontent">
+
+  <p>I joined Amrita School of Engineering, Amritapuri and completed almost a year</p>
+  <p>I have never expexted that I will end up in Amrita that too at Amritapuri...I was really scared whether I can cope up her or not but now my college turned so interesting because of CSE and friends</p>
+  <p>I took CSE as of my interest, and that is cool!! </p><p>Trying to explore new things in this college...</p>
+  <p>I felt much better environment here than what I expected. :|</p>
+  <p>Seriously I have learned many things apart from the academics...</p>
+  <p>Food here is some what problematic...I really miss my home food..</p>
+</div>
+<div id="Interests" class="tabcontent">
+  <p>I like listening to music..I felt like it relieves my stress..</p>
+  <p>I love talking to my friends..seriously I can spend hours talking to them ..</p>
+  <p>I am interested in learning new computer languages...I really felt very excited while doing this web page too...I really enjoyed doing it..</p>
+  <p>I am a bit lazy :p but still I can continue with it..</p>
+  <p>learning new things gives me my kind of enjoyment..</p>
+</div>
+<div id="Profile" class="tabcontent">
+  <h1>My Profile..!!</h1>
+  <img src="sarvani.jpg">
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
